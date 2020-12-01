@@ -1,1 +1,41 @@
-This nav.css
+.background-color {
+    background-color: #A81E43;
+    color: black;
+}
+
+nav {
+
+}
+
+#icon {
+    width: 2rem;
+    height: auto;
+    margin-right: 2rem;
+}
+
+#navbar-items {
+    width: 40%;
+    display: flex;
+    align-self: flex-start;
+}
+
+li a, nav a {
+    color: black;
+}
+
+
+li a {
+    margin: 0 2rem;
+}
+
+li a:hover {
+    color:#DFC8C8;
+}
+
+#title {
+    margin-right: 40%;
+}
+
+#title:hover {
+    color: black;
+}
