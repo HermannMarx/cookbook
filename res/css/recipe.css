@@ -1,1 +1,53 @@
-This recipe.css
+.recipe {
+    min-height: 75vh;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.recipe__heading {
+    font-size: 4.5rem;
+    color: #A81E43;
+}
+
+.recipe__description {
+    font-size: 1.5rem;
+    color: #C5C4C9;
+}
+
+.recipe__content-wrapper {
+    width: 100%;
+    display: flex;
+    margin-top: 2rem;
+}
+
+.recipe__ingredients-wrapper {
+    width: 35%;
+}
+
+.recipe__ingredients-heading {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #A81E43;
+}
+
+.recipe__ingredients-list {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+.recipe__image-wrapper {
+    width: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    border-radius: .5rem;
+}
+
+.recipe__image {
+    width: 100%;
+}
+
+.recipe__preparation {
+    width: 100%;
+}
