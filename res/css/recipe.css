@@ -53,6 +53,10 @@
     font-size: 2rem;
 }
 
+.recipe__ingredients-item {
+    margin-bottom: .8rem;
+}
+
 .recipe__image-wrapper {
     width: 50%;
     overflow: hidden;
@@ -84,4 +88,8 @@
     width: 98%;
     list-style-position: inside;
     font-size: 2rem;
+}
+
+.recipe__preparation-item {
+    margin-bottom: .8rem;
 }
