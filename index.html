@@ -9,29 +9,130 @@
       content="This agency is important bla for google"
     />
     <meta name="robots" content="index, follow" />
+      <link
+      rel="shortcut icon"
+      href="./res/favicon/fav-heart-red.png"
+      type="image/x-icon"
+    />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="stylesheet" type="text/css" href="res/css/style.css" />
-    <link rel="stylesheet" type="text/css" href="res/css/recipe.css" />
-    <link rel="stylesheet" type="text/css" href="res/css/nav.css" />
-    <link rel="stylesheet" type="text/css" href="res/css/footer.css" />
-    <link rel="stylesheet" type="text/css" href="res/css/hero.css" />
+    <!-- ToDo Download fonts used (Roboto & Pattaya)-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pattaya&family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- avoid overriding our custom stylesheets by putting bootstrap above custom stylesheets -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" type="text/css" href="res/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="res/css/recipe.css" />
+    <link rel="stylesheet" type="text/css" href="res/css/nav.css" />
+    <link rel="stylesheet" type="text/css" href="res/css/footer.css" />
+    <link rel="stylesheet" type="text/css" href="res/css/hero.css" />
+    <link rel="stylesheet" type="text/css" href="res/css/cards.css" />
     <title>Cookbook | Team Awesome</title>
   </head>
   <body>
     <header>
-      <h1>Hello ALL!</h1>
+      <nav class="navbar navbar-expand-lg background-color">
+        <a href="#"><img src="res/img/icon.png" alt="icon" id="icon" /></a
+        ><a class="navbar-brand" href="#" id="title">THE AWESOME COOKBOOK</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav" id="navbar-items">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <div class="dropdown" style="float:left;">
+              <a class="nav-link" href="#">Breakfast<span class="sr-only">(current)</span></a>
+              <div class="dropdown-content" style="left:0;">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+                </div>
+                </div>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown" style="float:left;">
+              <a class="nav-link" href="#">Lunch</a>
+              <div class="dropdown-content" style="left:0;">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+                </div>
+                </div>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown" style="float:left;">
+              <a class="nav-link" href="#">Dinner</a>
+              <div class="dropdown-content" style="left:0;">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+                </div>
+                </div>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown" style="float:left;">
+              <a class="nav-link" href="#">Dessert</a>
+              <div class="dropdown-content" style="left:0;">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+                </div>
+                </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
     <main>
-      <section class="section-hero"></section>
+      <!-- BEGIN SECTION-HERO sb -->
+      <section id="section-hero" class="section-hero">
+        <div class="container-center">
+          <h2>Awesome Recipes</h2>
+          <h3>
+            Awesome meals created by awesome people. <br />Cook with
+            <span class="section-hero_emoji"></span>
+          </h3>
+          <button><a href="#action-hero">Cook With US</a></button>
+        </div>
+      </section>
+      <!-- END SECTION-HERO sb -->
+      <!--START SECTION CARDS-->
+      <div class="section-cards-container container-fluid">
+         <h3>Selected Recipes</h3>
+        <div class="card-container">
+            <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="..." alt="Card image cap">
+            <div class="card-body">
+           <h5 class="card-title">David's Favorite</h5>
+           <p class="card-text">Indonesian Nasi Goreng.</p>
+           <a href="#" class="btn btn-primary">start cooking</a>
 
-      <section class="section-cards"></section>
-      <h1>bla bla</h1>
+           <div class="card2" style="width: 18rem;">
+            <img class="card-img-top" src="..." alt="Card image cap">
+            <div class="card-body">
+           <h5 class="card-title">Steffi's Favorite</h5>
+           <p class="card-text">Delicious xx</p>
+           <a href="#" class="btn btn-primary">start cooking</a>
+       </div>
+      </div>
+      </div>
+  </div>
+
+
     </main>
     <footer></footer>
     <!--Bootstraps JS implementation -->
