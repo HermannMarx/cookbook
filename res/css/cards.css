@@ -1,1 +1,14 @@
 /* cards.css - contains all styles for section-cards with cards and/or slider */
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+}
+
+.container-section-card {
+  text-align: center;
+  padding-top: 4rem;
+  padding-bottom: 5rem;
+  border-style: solid;
+}
