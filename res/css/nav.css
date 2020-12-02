@@ -4,12 +4,13 @@
 }
 
 nav {
-
+  min-height: 10vh;
 }
 
 #icon {
-    width: 2rem;
+    width: 5rem;
     height: auto;
+    padding: .5rem;
     margin-right: 2rem;
 }
 
@@ -20,12 +21,13 @@ nav {
 }
 
 li a, nav a {
-    color: black;
+    color: white;
 }
 
 
 li a {
     margin: 0 2rem;
+    font-size: 2rem;
 }
 
 li a:hover {
@@ -34,10 +36,8 @@ li a:hover {
 
 #title {
     margin-right: 40%;
-}
-
-#title:hover {
-    color: black;
+    font-size: 2rem;
+    color: white;
 }
 
 .dropdown-content {
