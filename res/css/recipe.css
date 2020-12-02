@@ -19,6 +19,7 @@
     width: 98%;
     font-size: 4.5rem;
     color: #A81E43;
+    font-weight: 700;
 }
 
 .recipe__description {
@@ -26,6 +27,7 @@
     font-size: 2rem;
     color: #C5C4C9;
     margin-top: .8rem;
+    margin-bottom: 0;
 }
 
 .recipe__content-wrapper {
@@ -46,6 +48,7 @@
     font-size: 2.5rem;
     margin-bottom: 1rem;
     color: #A81E43;
+    font-weight: 700;
 }
 
 .recipe__ingredients-list {
@@ -82,6 +85,7 @@
     font-size: 2.5rem;
     margin-bottom: 1rem;
     color: #A81E43;
+    font-weight: 700;
 }
 
 .recipe__preparation-list {
@@ -91,5 +95,10 @@
 }
 
 .recipe__preparation-item {
-    margin-bottom: .8rem;
+    padding: .5rem;
+    border-bottom: 1px solid #C5C4C9;
 }
+
+.recipe__preparation-list:last-child {
+    border-bottom: none !important;
+}   
