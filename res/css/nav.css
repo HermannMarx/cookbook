@@ -1,5 +1,5 @@
 .background-color {
-    background-color: #A81E43;
+    background-color: #811c3a;
     color: black;
 }
 
@@ -39,3 +39,36 @@ li a:hover {
 #title:hover {
     color: black;
 }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #DFC8C8;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+
+  }
+  
+  .dropdown-content a:hover {color: #A81E43;}
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
