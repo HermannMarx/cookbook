@@ -37,10 +37,9 @@
   width: 90%;
   margin: auto;
 }
+
 .section-hero h2 {
   font-size: 4.8rem;
-}
-.section-hero h2 {
   letter-spacing: 0.1rem;
   font-family: "Pattaya", sans-serif;
 }
@@ -75,7 +74,6 @@
   padding: 2rem 5rem;
   border: none;
   border-radius: 5px;
-  cursor: pointer;
   transition: background 0.5s ease-in-out;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
@@ -92,6 +90,7 @@
   opacity: none;
   color: black; /* color for white bg > #811c3a; sb-ch*/
   font-size: 2.5rem;
+  cursor: pointer;
 }
 .section-hero a:hover {
   text-decoration: none;
