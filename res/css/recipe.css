@@ -102,3 +102,27 @@
 .recipe__preparation-list:last-child {
     border-bottom: none !important;
 }   
+
+.recipe__button-wrapper {
+    width: 98%;
+    padding-bottom: 3rem;
+    margin: 0 auto;
+}
+
+.recipe__share-button {
+    width: 20rem;
+    font-size: 2rem;
+    background-color: #A81E43;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: .5rem;
+    font-weight: 500;
+    transition: background-color .2s, border .2s, color .2s, font-weight .2s;
+}
+
+.recipe__share-button:hover {
+    background-color: #fff;
+    border:1px solid #A81E43;
+    color: #A81E43;
+    font-weight: 500;
+}
