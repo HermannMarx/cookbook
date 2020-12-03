@@ -36,34 +36,21 @@
     <title>Cookbook | Team Awesome</title>
   </head>
   <body>
-    <header>
-      <nav class="navbar fixed-top navbar-expand-lg background-color">
-        <a href="index.html"><img src="res/img/icon1.png" alt="icon" id="icon" /></a>
+    <header class="header__nav-sticky">
+      <nav class="navbar navbar-expand-lg background-color">
+        <a href="index.html"><img src="res/img/icon2.png" alt="icon" id="icon" /></a>
         <a class="navbar-brand" href="index.html" id="title">THE AWESOME COOKBOOK</a>
-
         <div class="collapse navbar-collapse" id="navbarNav" id="navbar-items">
           <ul class="navbar-nav">
             <li class="nav-item active">
               <div class="dropdown" style="float: left">
-                <a class="nav-link" href="#"
-                  >Breakfast<span class="sr-only">(current)</span></a
-                >
+                <a class="nav-link" href="#">Lunch<span class="sr-only">(current)</span></a>
                 <div class="dropdown-content" style="left: 0">
-                  <a href="#">Link 1</a>
-                  <a href="#">Link 2</a>
-                  <a href="#">Link 3</a>
-                </div>
-              </div>
-            </li>
-            <li class="nav-item">
-              <div class="dropdown" style="float:left;">
-              <a class="nav-link" href="#">Lunch</a>
-              <div class="dropdown-content" style="left:0;">
-                <a href="goreng_recipe.html">Nasi Goreng</a>
+                  <a href="goreng_recipe.html">Nasi Goreng</a>
                 <a href="halusky_recipe.html">Bryndzové halušky</a>
                 <a href="#">Sauerkraut :P</a>
                 </div>
-                </div>
+              </div>
             </li>
             <li class="nav-item">
               <div class="dropdown" style="float:left;">
@@ -73,16 +60,21 @@
                 <a href="pizza_recipe.html">Pizza Mediterana</a>
                 <a href="#">Tacos</a>
                 </div>
+                </div>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown" style="float:left;">
+              <a class="nav-link" href="#">Dessert</a>
+              <div class="dropdown-content" style="left:0;">
+                <a href="c-rolls_recipe.html">Cinnamon Rolls</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
               </div>
             </li>
             <li class="nav-item">
               <div class="dropdown" style="float: left">
-                <a class="nav-link" href="#">Dessert</a>
-                <div class="dropdown-content" style="left: 0">
-                  <a href="c-rolls_recipe.html">Cinnamon Rolls</a>
-                  <a href="#">Link 2</a>
-                  <a href="#">Link 3</a>
-                </div>
+                <a class="nav-link" href="#section-contact">Contact</a>
               </div>
             </li>
           </ul>
@@ -154,13 +146,13 @@
         <div>
             <h2>Contact Us</h2>
         </div>
-        <form action="">
+        <form action="" class="section-contact__form">
             <label for="name-input">Your Name: </label>
             <input type="name" name="name" id="name-input">
             <label for="email-input">Your E-Mail: </label>
             <input type="email" name="email" id="email-input">
             <label for="message-input">Your Message: </label>
-            <textarea name="message" id="message-input" cols="30" rows="5"></textarea>
+            <textarea name="message" id="message-input" cols="30" rows="3"></textarea>
             <button class="section-contact__button">Send</button>
         </form>
     </section>
