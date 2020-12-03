@@ -11,9 +11,13 @@
   /* linear-gradient(to top, rgba(129, 28, 58, 1), rgba(252, 251, 253)), */
   /* linear-gradient(to top, rgba(124, 5, 37, 0.3), rgba(252, 251, 253)), */
   background: linear-gradient(rgba(124, 5, 37, 0.3), rgba(252, 251, 253));
-  min-height: 90vh;
+  min-height: 82vh;
   padding: 2rem;
 }
+.section-contact__form {
+  margin-bottom: 10rem;
+}
+
 .section-contact h2 {
   font-size: 3.8rem;
   padding: 5rem 0rem;
@@ -39,18 +43,19 @@
   background: white;
   opacity: 1;
   border: 1px solid #a81e43;
+  font-size: 1.8rem;
+  color: rgb(78, 75, 75);
 }
 
 .section-contact form button {
   width: 50%;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   padding: 1rem 4rem;
-  background: #811c3a; /*#cfc8c8; (lightrose) */ /*#a81e43;(middlered)*/
+  background: #a81e43; /*#cfc8c8; (lightrose) */ /*#811c3a;(deeplered)*/
   border: none;
   border-radius: 0.5rem;
   color: white;
   cursor: pointer;
-  margin-bottom: 10rem;
 }
 
 .section-contact form button:hover {
@@ -59,4 +64,18 @@
   border: 1px solid #a81e43;
   color: #a81e43;
   font-weight: 500;
+}
+
+/* avoid that sticky nav hides anchor: */
+.container-section-card,
+.section-contact {
+  scroll-margin-top: 10vh;
+}
+.container-section-card::before,
+.section-contact::before {
+  display: block;
+  content: " ";
+  height: 10vh;
+  margin-top: -10vh;
+  visibility: hidden;
 }
