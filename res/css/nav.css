@@ -20,6 +20,10 @@ nav {
     align-self: flex-start;
 }
 
+.navbar-collapse {
+  flex-grow: 0!important;
+}
+
 li a, nav a {
     color: white;
 }
