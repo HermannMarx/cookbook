@@ -32,6 +32,7 @@
     <link rel="stylesheet" type="text/css" href="res/css/footer.css" />
     <link rel="stylesheet" type="text/css" href="res/css/hero.css" />
     <link rel="stylesheet" type="text/css" href="res/css/cards.css" />
+    <link rel="stylesheet" type="text/css" href="res/css/contact.css" />
     <title>Cookbook | Team Awesome</title>
   </head>
   <body>
@@ -102,7 +103,7 @@
       </section>
       <!-- END SECTION-HERO sb -->
       <!--START SECTION CARDS-->
-      <div class="container-section-card">
+      <div id="action-hero" class="container-section-card">
         <h3>Selected Recipes</h3>
         <div class="card-container">
           <div class="card" style="width: 18rem">
@@ -146,13 +147,30 @@
           </div>
         </div>
       </div>
+      <!-- END Section Cards -->
+      <!-- BEGIN SECTION-CONTACT -->
+      <section id="section-contact" class="section-contact">
+        <div>
+            <h2>Contact Us</h2>
+        </div>
+        <form action="">
+            <label for="name-input">Your Name: </label>
+            <input type="name" name="name" id="name-input">
+            <label for="email-input">Your E-Mail: </label>
+            <input type="email" name="email" id="email-input">
+            <label for="message-input">Your Message: </label>
+            <textarea name="message" id="message-input" cols="30" rows="5"></textarea>
+            <button class="section-contact__button">Send</button>
+        </form>
+    </section>
+    <!-- END SECTION-CONTACT sb -->
     </main>
     <!-- BEGIN FOOTER sb -->
     <footer id="footer__main" class="footer__main">
       <div class="container-center footer__nav">
         <div class="footer__list">
             <div class="footer__list-col-left footer__list-col-center">
-                <span><a href="#">Contact</a></span>
+                <span><a href="#section-contact">Contact</a></span>
                 <span><a href=""></a></span>
             </div>
             <div class="footer__list-col-middle footer__list-col-center">
