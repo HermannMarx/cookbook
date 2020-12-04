@@ -12,11 +12,18 @@
   padding-bottom: 7rem;
 }
 
+.card-recipe {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 50%;
+}
 .container-section-card h3 {
   margin-bottom: 7rem;
-  font-size: 3rem;
-  color: white;
-  text-shadow: 2px 2px 4px #000000;
+  padding: 5rem 0rem;
+  font-size: 4.5rem;
+  color: #a81e43;
+  font-weight: 700;
 }
 
 .btn {
