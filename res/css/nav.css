@@ -26,6 +26,10 @@ nav {
   align-self: flex-start;
 }
 
+.navbar {
+  justify-content: center;
+}
+
 .navbar-collapse {
   flex-grow: 0 !important;
 }
