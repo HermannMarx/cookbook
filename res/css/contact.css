@@ -1,0 +1,81 @@
+/* contact.css - contains all styles for section-contact */
+
+/* section-contact */
+
+#section-contact {
+  color: #a81e43;
+  text-align: center;
+  background: #dfc8c8; /* #dfc8c8;*/
+  /* sb-test radients */
+  /* linear-gradient(to top, rgba(250, 0, 0, 1), rgb(252, 251, 253)), */
+  /* linear-gradient(to top, rgba(129, 28, 58, 1), rgba(252, 251, 253)), */
+  /* linear-gradient(to top, rgba(124, 5, 37, 0.3), rgba(252, 251, 253)), */
+  background: linear-gradient(rgba(124, 5, 37, 0.3), rgba(252, 251, 253));
+  min-height: 82vh; /*82vh;*/
+  padding: 2rem;
+}
+.section-contact__form {
+  margin-bottom: 10rem;
+}
+
+.section-contact h2 {
+  font-size: 3.8rem;
+  padding: 5rem 0rem;
+  /* text-transform: uppercase;*/
+  letter-spacing: 0.2rem;
+  color: #a81e43;
+  font-weight: 700;
+}
+
+.section-contact form input,
+.section-contact form label,
+.section-contact form textarea {
+  display: block;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #a81e43;
+  font-weight: 700;
+}
+.section-contact form input,
+.section-contact form textarea {
+  margin: 2rem auto;
+  width: 30%;
+  background: white;
+  opacity: 1;
+  border: 1px solid #a81e43;
+  font-size: 1.8rem;
+  color: rgb(78, 75, 75);
+}
+
+.section-contact form button {
+  width: 30%;
+  font-size: 1.7rem;
+  padding: 1rem 4rem;
+  background: #a81e43; /*#cfc8c8; (lightrose) */ /*#811c3a;(deeplered)*/
+  border: none;
+  border-radius: 0.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+.section-contact form button:hover {
+  background-color: #fff;
+  padding: 0.9rem 3.9rem;
+  border: 1px solid #a81e43;
+  color: #a81e43;
+  font-weight: 500;
+}
+
+/* avoid that sticky nav hides anchor: */
+.container-section-card,
+.section-contact {
+  scroll-margin-top: 10vh;
+}
+.container-section-card::before,
+.section-contact::before {
+  display: block;
+  content: " ";
+  height: 10vh;
+  margin-top: -10vh;
+  visibility: hidden;
+}

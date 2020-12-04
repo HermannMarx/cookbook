@@ -1,34 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="This agency is important bla for google">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="This agency is important bla for google"
+    />
     <meta name="robots" content="index, follow" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" type="text/css" href="res/css/style.css">
-    <link rel="stylesheet" type="text/css" href="res/css/recipe.css">
-    <link rel="stylesheet" type="text/css" href="res/css/nav.css">
-    <link rel="stylesheet" type="text/css" href="res/css/footer.css">
-    <link rel="stylesheet" type="text/css" href="res/css/hero.css">
+    <link
+      rel="shortcut icon"
+      href="./res/favicon/fav-heart-red.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pattaya&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- avoid overriding our custom stylesheets by putting bootstrap above custom stylesheets -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="res/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="res/css/recipe.css" />
+    <link rel="stylesheet" type="text/css" href="res/css/nav.css" />
+    <link rel="stylesheet" type="text/css" href="res/css/footer.css" />
+    <link rel="stylesheet" type="text/css" href="res/css/hero.css" />
+    <link rel="stylesheet" type="text/css" href="res/css/cards.css" />
+    <link rel="stylesheet" type="text/css" href="res/css/contact.css" />
+    <link rel="stylesheet" type="text/css" href="res/css/animations.css" />
     <title>Cookbook | Team Awesome</title>
-</head>
-<body>
-    <header>
-      
+  </head>
+  <body>
+    <header class="header__nav-sticky">
+      <nav class="navbar navbar-expand-lg background-color">
+        <a href="index.html"><img src="res/img/icon2.png" alt="icon" id="icon" /></a>
+        <a class="navbar-brand" href="index.html" id="title">THE AWESOME COOKBOOK</a>
+        <div class="collapse navbar-collapse" id="navbarNav" id="navbar-items">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <div class="dropdown" style="float: left">
+                <a class="nav-link" href="#">Lunch<span class="sr-only">(current)</span></a>
+                <div class="dropdown-content" style="left: 0">
+                  <a href="goreng_recipe.html">Nasi Goreng</a>
+                <a href="halusky_recipe.html">Bryndzové halušky</a>
+                <a href="mezcal_cocktail.html">Mezcal Cocktail</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown" style="float:left;">
+              <a class="nav-link" href="#">Dinner</a>
+              <div class="dropdown-content" style="left:0;">
+                <a href="thai_recipe.html">Thai Curry</a>
+                <a href="pizza_recipe.html">Pizza Mediterana</a>
+                </div>
+                </div>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown" style="float:left;">
+              <a class="nav-link" href="#">Dessert</a>
+              <div class="dropdown-content" style="left:0;">
+                <a href="c-rolls_recipe.html">Cinnamon Rolls</a>
+                  <a href="dessert_cookies-choc_recipe.html">Chocolate Cookies</a>
+                  <a href="dessert_fruit-puree_recipe.html">Fruit Date</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown" style="float: left">
+                <a class="nav-link" href="./#section-contact">Contact</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      </nav>
     </header>
     <main>
-        <section class="section-hero">
-
-        </section>
-
-        <section class="section-cards">
-
-        </section>
+      <!-- BEGIN SECTION-HERO sb -->
+      <section id="section-hero" class="section-hero">
+        <div class="container-center">
+          <h2>Awesome Recipes</h2>
+          <h3>
+            Awesome meals created by awesome people. <br />Cook with
+            <span class="section-hero_emoji"></span>
+          </h3>
+          <button><a href="#action-hero">Cook With US</a></button>
+        </div>
+      </section>
+      <!-- END SECTION-HERO sb -->
+      <!--START SECTION CARDS-->
+      <div id="action-hero" class="container-section-card">
+        <div class="section-card__header">
+          <h3>Selected Recipes</h3>
+          <h4>These are our favorite recipes for this week. <br>
+          We will add more soon with a great slider for you 
+          to explore all our awesome recipes.</h4>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <figure class ="recipe__image-hover-effect-title">
+              <img class="card-img-top" src="./res/img/bryndzove-haluskybig.jpg" alt="Card image cap" />
+              <figcaption class="recipe__image-display-title section-cards__image-overlay"><span>Bryndzové halušky</span></figcaption>
+            </figure>
+            <div class="card-body">
+              <h5 class="card-title">Bryndzové halušky</h5>
+              <p class="card-text">Slovakia's pride</p>
+              <a href="./halusky_recipe.html" class="btn btn-primary">start cooking</a>
+            </div>
+          </div>
+          <div class="card" >
+           <figure class ="recipe__image-hover-effect-title">
+              <img class="card-img-top" src="./res/img/cinnamon-rolls-2.jpeg" alt="Card image cap" />
+              <figcaption class="recipe__image-display-title section-cards__image-overlay"><span>Cinnamon Rolls</span></figcaption>
+            </figure> 
+           <div class="card-body">
+              <h5 class="card-title">Sweet tooth</h5>
+              <p class="card-text">Home recipe</p>
+              <a href="./c-rolls_recipe.html" class="btn btn-primary">start baking</a>
+            </div>
+          </div>
+          <div class="card" >
+            <figure class ="recipe__image-hover-effect-title">
+              <img class="card-img-top" src="./res/img/thai-pixabay.jpg" alt="Card image cap" />
+              <figcaption class="recipe__image-display-title section-cards__image-overlay"><span>Thai Curry</span></figcaption>
+            </figure> 
+            <div class="card-body">
+              <h5 class="card-title">Thai's Fav</h5>
+              <p class="card-text">Spicey Soup</p>
+              <a href="./chiles_nogada.html" class="btn btn-primary">Enjoy with us</a>
+            </div>
+          </div>
+          <div class="card">
+              <figure class ="recipe__image-hover-effect-title">
+                <img class="card-img-top" src="./res/img/oaxacan-mezcal-cocktail-w1.jpg" alt="Card image cap" />
+                <figcaption class="recipe__image-display-title section-cards__image-overlay"><span>Mezcal Cocktail</span></figcaption>
+              </figure> 
+            <div class="card-body">
+              <h5 class="card-title">Get tipsy</h5>
+              <p class="card-text">Mezcal Cocktail</p>
+              <a href="./mezcal_cocktail.htmls" class="btn btn-primary">drink with us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END Section Cards -->
+      <!-- BEGIN SECTION-CONTACT -->
+      <section id="section-contact" class="section-contact">
+        <div>
+            <h2>Contact Us</h2>
+        </div>
+        <form action="" class="section-contact__form">
+            <label for="name-input">Your Name: </label>
+            <input type="name" name="name" id="name-input">
+            <label for="email-input">Your E-Mail: </label>
+            <input type="email" name="email" id="email-input">
+            <label for="message-input">Your Message: </label>
+            <textarea name="message" id="message-input" cols="30" rows="3"></textarea>
+            <button class="section-contact__button">Send</button>
+        </form>
+    </section>
+    <!-- END SECTION-CONTACT sb -->
     </main>
-    <footer>
-
+    <!-- BEGIN FOOTER sb -->
+    <footer id="footer__main" class="footer__main">
+      <div class="container-center footer__nav">
+        <div class="footer__list">
+            <div class="footer__list-col-left footer__list-col-center">
+                <span><a href="./#section-contact">Contact</a></span>
+                <span><a href=""></a></span>
+            </div>
+            <div class="footer__list-col-middle footer__list-col-center">
+              <!--Created with <span class="footer__icon-heart"></span> by  4 VV E 5 O |V| E  -->
+                <span>AWESOME WEB DESIGN</span>
+                <span>Copyright © 2020</span>
+            </div>
+            <div class="footer__list-col-right footer__list-col-center">
+                <span><a href=""></a></span>
+                <span><a href="#">Imprint</a></span>
+            </div>
+         </div>
     </footer>
-</body>
+    <!-- END FOOTER sb -->
+    <!--Bootstraps JS implementation -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

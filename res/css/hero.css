@@ -1,1 +1,97 @@
-This hero.css
+/* hero.css - contains all styles for section-hero */
+
+/* section-hero */
+
+#section-hero {
+  position: relative;
+  min-height: 90vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  padding: 2rem;
+  /* text-shadow: 3px 3px 10px black; sb-test */
+}
+#section-hero::before {
+  content: "";
+  /* sb-test radients */
+  /* linear-gradient(to top, rgba(250, 0, 0, 1), rgb(252, 251, 253)), */
+  /* linear-gradient(to top, rgba(129, 28, 58, 1), rgba(252, 251, 253)), */
+  /* linear-gradient(to top, rgba(124, 5, 37, 0.3), rgba(252, 251, 253)), */
+  background: linear-gradient(to top, transparent, rgba(252, 251, 253, 0)),
+    url("../img/sb_hero_sample.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: -1;
+  opacity: 1; /* opacity can be set here */
+}
+.container-center {
+  width: 90%;
+  margin: auto;
+}
+
+.section-hero h2 {
+  font-size: 4.8rem;
+  letter-spacing: 0.1rem;
+  font-family: "Pattaya", sans-serif;
+}
+
+.section-hero h3 {
+  letter-spacing: 0.1rem;
+  font-family: "Roboto", sans-serif; /* sb-test fonts */
+}
+.section-hero h3 {
+  font-size: 3rem;
+  font-weight: normal;
+  padding: 5rem;
+}
+.section-hero_emoji::after {
+  content: "love";
+  color: #a81e43;
+  font-family: "Pattaya", sans-serif;
+  font-size: 4.8rem;
+  /* sb-test*/
+  /* content: "\1F49A"; */ /* green heart */
+  /* content: "\1F354"; */ /* hamburger */
+}
+.section-hero button,
+.section-hero p {
+  font-size: 2rem;
+}
+.section-hero button {
+  background: #a81e43;
+  background: #cfc8c8; /* sb-variant with opacity instead of red bg */
+  opacity: 0.4; /* sb-test */
+  min-width: 45%;
+  padding: 2rem 5rem;
+  border: none;
+  border-radius: 5px;
+  transition: background 0.5s ease-in-out;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-weight: 700;
+}
+.section-hero button:hover {
+  background: #811c3a;
+  background: #cfc8c8; /* sb-test */
+  opacity: 0.8; /* sb-test */
+  animation: unset;
+}
+.section-hero a {
+  color: white; /* overwritten by black for variant sb-test */
+  opacity: none;
+  color: black; /* color for white bg > #811c3a; sb-ch*/
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+.section-hero a:hover {
+  text-decoration: none;
+}
