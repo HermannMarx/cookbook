@@ -1,7 +1,7 @@
 .recipe {
   min-height: 75vh;
   width: 70%;
-  margin: 0 auto;
+  margin: 6rem auto;
   display: flex;
   flex-direction: column;
 }
